@@ -1,0 +1,64 @@
+.information {
+  @media (min-width: 768px) {
+    margin-top: 40px;
+  }
+
+  .container {
+    @media (max-width: 768px) {
+      padding: 0;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    background-image: url(../img/first-mob.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding: 110px 0 58px;
+    grid-gap: 36px;
+
+
+    @media (min-width: 1024px) {
+      background-image: url(../img/first-desktop.png);
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 110px 10px;
+      // grid-gap: clamp(40px, 3.906vw, 80px);
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 26px;
+
+    @media (min-width: 576px) {
+      grid-gap: 64px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 44px;
+  }
+
+  &__title {
+    span {
+      margin-top: 12px;
+
+      @media (min-width: 576px) {
+        margin-top: 25px;
+      }
+    }
+  }
+
+  &__list-item {
+    list-style: disc;
+  }
+}

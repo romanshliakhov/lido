@@ -7,7 +7,32 @@
       @include('partials/header.html',{})
 
       <main class="main">
-
+        <section class="information">
+          <div class="container">
+            <div class="information__wrapper">
+              <div class="information__left">
+                <h1 class="information__title title">Сертифіковані<br> автоковрики <span>ПРЕМІУМ ЯКОСТІ</span></h1>
+                <ul class="information__list">
+                  <li class="information__list-item">Гарантія на 2 роки</li>
+                  <li class="information__list-item">Виготовлення/підбір за 1 день</li>
+                  <li class="information__list-item">Матеріали з Європи</li>
+                </ul>
+              </div>
+              <div class="information__right">
+                <button class="button">Замовити консультацію</button>
+                <div class="gift">
+                  <div class="gift__box">
+                    <picture>
+                      <source type='image/webp' srcset='img/gift.webp'>
+                      <img width='163' height='147' src='img/gift.png' alt='gift'>
+                    </picture>
+                  </div>
+                  <p class="gift__descr">Отримай подарунки  до 500грн. на свій вибір та 10% знижки на автотовари від lido.ua за покупку повного комплекту ковриків</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       @include('partials/footer.html',{})

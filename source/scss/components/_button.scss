@@ -1,0 +1,16 @@
+.button {
+  height: 53px;
+  max-width: 248px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-yellow);
+  box-shadow: 0px 3px 34px rgba(252, 206, 28, 0.5);
+  border-radius: 4px;
+  transition: all 0.4s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
