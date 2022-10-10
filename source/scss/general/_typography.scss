@@ -67,3 +67,61 @@
   line-height: 140%;
   color: var(--color-white);
 }
+
+.h2 {
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 800;
+
+  @media (min-width: 576px) {
+    font-size: 44px;
+  }
+}
+
+.consultation__title {
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 800;
+}
+
+.consultation__text {
+  font-size: 12px;
+  line-height: 140%;
+}
+
+.consultation__btn {
+  font-size: 12px;
+  line-height: 120%;
+  font-weight: 800;
+}
+
+.mats__details-item {
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--color-black);
+}
+
+.variants__title {
+  font-size: 20px;
+  line-height: 110%;
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+.variants__descr {
+  font-size: 12px;
+  line-height: 120%;
+  color: var(--color-yellow);
+}
+
+.h3 {
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 800;
+  text-align: center;
+}
+
+.mat__details-item {
+  font-size: 16px;
+  line-height: 120%;
+}

@@ -1,0 +1,50 @@
+.mat {
+  margin-top: 55px;
+
+  &__wrapp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__slider {
+    margin-bottom: 25px;
+  }
+
+  &__details {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 16px;
+  }
+
+  &__details-item {
+    position: relative;
+    padding-left: 45px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: var(--mat-details);
+      background-repeat: no-repeat;
+      width: 29px;
+      height: 29px;
+      top: -5px;
+      left: 0;
+    }
+  }
+
+  &__consultation {
+    margin-bottom: 20px;
+  }
+
+  &__slider {
+    width: 100%;
+  }
+}
