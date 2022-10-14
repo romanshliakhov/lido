@@ -11,6 +11,7 @@
     @media (min-width: 768px) {
       display: grid;
       grid-template-columns: 60% 40%;
+      align-items: start;
       padding: 0 16px;
       grid-gap: 30px 35px;
     }

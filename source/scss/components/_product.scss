@@ -1,5 +1,5 @@
 .product {
-  height: 300px;
+  height: clamp(300px, 35.417vw, 680px);
 
   picture,
   img {
