@@ -54,7 +54,13 @@
 
   &__slider {
     position: relative;
-    width: 100%;
+    width: calc(100% + 32px);
+    margin-left: -16px;
+
+    @media (min-width: 768px) {
+      width: 100%;
+      margin-left: 0;
+    }
   }
 
   &__slider-btn {
@@ -70,12 +76,23 @@
     }
 
     &--prev {
-      left: 0;
+      left: 16px;
     }
 
     &--next {
-      right: 0;
+      right: 16px;
     }
+  }
+
+  &__slider-pagination {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
   }
 
   &__information {

@@ -6,10 +6,10 @@
   background-color: rgba(217, 217, 217, 0.8);
   border-radius: 5.73333px;
 
-  @media (min-width: 576px) {
-    padding: 0 19px;
+  @media (min-width: 768px) {
+    padding: 10px 19px;
     max-width: 430px;
-    min-height: 157px;
+    min-height: 147px;
   }
 
   &__box {
@@ -19,7 +19,7 @@
     transform: matrix(0.98, -0.18, 0.22, 0.98, 0, 0);
     animation: boxbeat 1.5s ease infinite;
 
-    @media (min-width: 576px) {
+    @media (min-width: 768px) {
       margin-left: -70px;
     }
 
@@ -28,7 +28,7 @@
       width: 94px;
       height: 92px;
 
-      @media (min-width: 576px) {
+      @media (min-width: 768px) {
         width: 163px;
         height: 147px;
       }

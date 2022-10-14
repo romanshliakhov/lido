@@ -75,6 +75,17 @@ $colors: (
   }
 }
 
+/* Pagination */
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.swiper-pagination-bullet-active {
+	background-color: #fff;
+}
+
 /* 3D Effects */
 .swiper-container-3d {
   perspective: 1200px;
