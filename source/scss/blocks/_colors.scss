@@ -1,0 +1,44 @@
+.colors {
+  width: calc(100% + 32px);
+  margin-bottom: 38px;
+  display: flex;
+  align-items: center;
+  grid-gap: 3px;
+  padding: 16px;
+  overflow-x: auto;
+
+  &__item {
+    width: 60px;
+    height: 40px;
+    border-radius: 8.23302px;
+    transform: rotate(-60deg);
+
+    &--midnight {
+      background-color: var(--color-midnight);
+    }
+
+    &--lusty {
+      background-color: var(--color-lusty);
+    }
+
+    &--green {
+      background-color: var(--color-green);
+    }
+
+    &--scampi {
+      background-color: var(--color-scampi);
+    }
+
+    &--pink {
+      background-color: var(--color-pink);
+    }
+
+    &--santas {
+      background-color: var(--color-santas);
+    }
+
+    &--buccaneer {
+      background-color: var(--color-buccaneer);
+    }
+  }
+}

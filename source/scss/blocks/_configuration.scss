@@ -1,0 +1,52 @@
+.configuration {
+  width: 100%;
+
+  &__title {
+    margin-bottom: 28px;
+  }
+
+  &__list {
+    margin-bottom: 38px;
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 50px;
+    padding: 31px 0;
+    border-bottom: 1px solid rgba(49, 49, 51, 0.2);
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+      border-bottom: transparent;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 5px;
+    flex-grow: 1;
+  }
+
+  &__info-pricelist {
+    display: flex;
+    align-items: center;
+    grid-gap: 15px;
+  }
+
+  &__choose {
+    width: calc(100% + 16px);
+    padding-right: 16px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 220px);
+    grid-gap: 12px;
+    overflow-x: auto;
+  }
+}

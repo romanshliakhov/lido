@@ -85,6 +85,10 @@ picture {
   display: inline-flex;
 }
 
+svg {
+  fill: transparent;
+}
+
 fieldset {
     padding: 0;
     outline: none;

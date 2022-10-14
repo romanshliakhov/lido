@@ -119,9 +119,78 @@
   line-height: 120%;
   font-weight: 800;
   text-align: center;
+
+  @media (min-width: 576px) {
+    font-size: 50px;
+    line-height: 120%;
+  }
 }
 
 .mat__details-item {
   font-size: 16px;
   line-height: 120%;
+}
+
+.seo__text {
+  font-size: 14px;
+  line-height: 140%;
+
+  @media (min-width: 576px) {
+    font-size: 16px;
+  }
+}
+
+.materials__title,
+.configuration__title {
+  font-size: 22px;
+  line-height: 120%;
+  font-weight: 800;
+}
+
+.material__info {
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 600;
+}
+
+.material__made {
+  font-size: 14px;
+  line-height: 120%;
+  color: var(--color-yellow);
+}
+
+.configuration__info-type {
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 600;
+}
+
+.configuration__info-pricelist {
+  font-size: 14px;
+  line-height: 120%;
+}
+
+.configuration__info-price {
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 700;
+  color: var(--color-yellow);
+}
+
+.choose__title {
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 600;
+}
+
+.choose__made-country {
+  font-size: 14px;
+  line-height: 120%;
+  color: var(--color-yellow);
+}
+
+.gifts__title {
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 700;
 }

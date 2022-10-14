@@ -5,22 +5,15 @@ for (const container of document.querySelectorAll('.container') ) {
     slidesPerView: 1,
     freeMode: true,
     loop: true,
-    navigation: {
-      nextEl: container.querySelector(".slider__btn--next"),
-      prevEl: container.querySelector(".slider__btn--prev"),
+    pagination: {
+      el: ".swiper-pagination",
       clickable: true,
-  },
-    // breakpoints: {
-    //   320: {
-    //       slidesPerView: 'auto',
-    //       freeMode: true,
-    //       spaceBetween: 10,
-    //     },
-    //   1440: {
-    //     slidesPerView: 5,
-    //     spaceBetween: 18,
-    //   }
-    // }
+    },
+    navigation: {
+      nextEl: container.querySelector(".mat__slider-btn--next"),
+      prevEl: container.querySelector(".mat__slider-btn--prev"),
+      clickable: true,
+    },
   });
 }
 

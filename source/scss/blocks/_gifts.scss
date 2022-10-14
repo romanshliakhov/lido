@@ -1,0 +1,16 @@
+.gifts {
+  width: calc(100% + 32px);
+  margin: 25px 0 30px;
+  padding: 33px 0 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 25px;
+  background-color: var(--color-yellow);
+
+  &__title {
+    max-width: 260px;
+    text-align: center;
+  }
+}

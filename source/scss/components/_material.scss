@@ -1,0 +1,26 @@
+.material {
+  display: flex;
+  align-items: center;
+  grid-gap: 28px;
+  padding: 14px 0 14px 7px;
+
+  &__image {
+    width: 62px;
+    height: 62px;
+
+    picture,
+    img {
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+
+  &__info {
+    flex-grow: 1;
+  }
+
+  &__made {
+    display: block;
+  }
+}

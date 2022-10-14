@@ -1,11 +1,37 @@
 .seo {
   padding: 57px 0;
 
+  &__wrapp {
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 40px;
+    }
+  }
+
   &__title {
     margin-bottom: 25px;
+
+    @media (min-width: 768px) {
+      grid-column: span 2;
+    }
   }
 
   &__text {
     margin-bottom: 43px;
+  }
+
+  &__consultation {
+    @media (min-width: 768px) {
+      grid-column: span 2;
+
+      .consultation__title {
+        display: none;
+      }
+
+      .consultation__box {
+        // max-width: 995px;
+      }
+    }
   }
 }
