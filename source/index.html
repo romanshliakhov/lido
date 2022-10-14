@@ -19,7 +19,7 @@
                 </ul>
               </div>
               <div class="information__right">
-                <button class="button">Замовити консультацію</button>
+                <button class="button" data-path="consultation">Замовити консультацію</button>
                 <div class="gift">
                   <div class="gift__box">
                     <picture>
@@ -41,7 +41,7 @@
               <div class="mats__content">
                 <ul class="mats__variants">
                   <li class="mats__variants-item">
-                    <a class="variants" href="#" style="background-image: url(../img/mats/3d.png);">
+                    <a class="variants" href="#eva" style="background-image: url(../img/mats/3d.png);">
                       <div class="variants__title">3D автоковрики EVA</div>
                       <p class="variants__descr">100%  оригінальні сертифіковані <br>
                         Eva-матеріал з Європи</p>
@@ -49,14 +49,14 @@
                   </li>
 
                   <li class="mats__variants-item">
-                    <a class="variants" href="#" style="background-image: url(../img/mats/tekstulni.png);">
+                    <a class="variants" href="#textile" style="background-image: url(../img/mats/tekstulni.png);">
                       <div class="variants__title">Текстильні, ворсові, велюрові коврики в авто</div>
                       <p class="variants__descr">Щільність ворсу до 2000 од. що дає теплоізоляцію і втримує вологу краще ніж аналогічні іншого виробника</p>
                     </a>
                   </li>
 
                   <li class="mats__variants-item">
-                    <a class="variants" href="#" style="background-image: url(../img/mats/rezunovi.png);">
+                    <a class="variants" href="#rubber" style="background-image: url(../img/mats/rezunovi.png);">
                       <div class="variants__title">Поліуританові, резинові коврики для машини</div>
                       <p class="variants__descr">Сертифікований поліуритан і міцна резина</p>
                     </a>
@@ -85,7 +85,7 @@
                     </div>
                     <div class="consultation__info">
                       <p class="consultation__text">Наші консультанти готові відповісти на ваші питання!</p>
-                      <button class="consultation__btn">
+                      <button class="consultation__btn" data-path="consultation">
                         <picture>
                           <source type='image/webp' srcset='img/phone.webp'>
                           <img width='20' height='17' src='img/phone.png' alt='consultation btn'>
@@ -100,7 +100,7 @@
           </div>
         </section>
 
-        <section class="mat">
+        <section class="mat" id="eva">
           <div class="container">
             <div class="mat__wrapp">
               <h3 class="mat__title h3">3D автоковрики EVA</h3>
@@ -190,7 +190,7 @@
                   </li>
                 </ul>
 
-                <button class="mat__consultation button">Замовити консультацію</button>
+                <button class="mat__consultation button" data-path="consultation">Замовити консультацію</button>
 
                 <div class="mat__gift gift">
                   <div class="gift__box">
@@ -206,7 +206,7 @@
           </div>
         </section>
 
-        <section class="mat">
+        <section class="mat" id="textile">
           <div class="container">
             <div class="mat__wrapp">
               <h3 class="mat__title h3">Текстильні, ворсові, велюрові коврики в авто</h3>
@@ -502,12 +502,12 @@
                 <div class="gifts__title">До текстильних ковриків 4 види підпятників у подарунок!</div>
               </div>
 
-              <button class="button">Замовити консультацію</button>
+              <button class="button" data-path="consultation">Замовити консультацію</button>
             </div>
           </div>
         </section>
 
-        <section class="mat">
+        <section class="mat" id="rubber">
           <div class="container">
             <div class="mat__wrapp">
               <h3 class="mat__title h3">Поліуретанові резинові коврики на замовлення</h3>
@@ -572,9 +572,9 @@
                   <li class="mat__details-item">Ціни від Х грн за повний комлпект</li>
                 </ul>
 
-                <button class="mat__consultation button">Замовити консультацію</button>
+                <button class="mat__consultation button" data-path="consultation">Замовити консультацію</button>
 
-                <a href="#" class="mat__choose button">Підібрати на сайті</a>
+                <a href="https://lido.ua/" class="mat__choose button">Підібрати на сайті</a>
               </div>
             </div>
           </div>
@@ -624,6 +624,7 @@
       </main>
 
       @include('partials/footer.html',{})
+      @include('partials/modals.html',{})
     </div>
 
     <script type="text/javascript" src="js/main.js"></script>
