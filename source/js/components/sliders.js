@@ -3,7 +3,6 @@ import Swiper from '../vendor/swiper.js';
 for (const container of document.querySelectorAll('.container') ) {
   let matSlider = new Swiper(container.querySelector('.mat__slider'), {
     slidesPerView: 1,
-    // freeMode: true,
     loop: true,
     pagination: {
       el: ".swiper-pagination",
@@ -16,6 +15,13 @@ for (const container of document.querySelectorAll('.container') ) {
     },
   });
 }
+
+let giftsSlider = new Swiper(".gifts__slider", {
+  slidesPerView: 1,
+  spaceBetween: 12,
+  centeredSlides: true,
+});
+
 
 
 
