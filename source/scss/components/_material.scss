@@ -1,7 +1,8 @@
 .material {
   display: flex;
   align-items: center;
-  grid-gap: 28px;
+  flex-wrap: wrap;
+  grid-gap: 0 28px;
   padding: 14px 0 14px 7px;
 
   &__image {
