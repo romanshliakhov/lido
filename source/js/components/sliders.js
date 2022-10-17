@@ -4,6 +4,7 @@ for (const container of document.querySelectorAll('.container') ) {
   let matSlider = new Swiper(container.querySelector('.mat__slider'), {
     slidesPerView: 1,
     loop: true,
+    observer: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -23,18 +24,20 @@ let giftsSlider = new Swiper(".gifts__slider", {
   loop: true,
   observer: true,
   breakpoints: {
-    // 320: {
-    //   slidesPerView: 1.75,
-    //     spaceBetween: 12,
-    //   },
-    // 576: {
-    //   slidesPerView: 1.5,
-    //   spaceBetween: 15,
-    // },
-    // 768: {
-    //   slidesPerView: 3,
-    //   spaceBetween: 20,
-    // }
+    320: {
+      slidesPerView: 1.75,
+        spaceBetween: 12,
+      },
+    768: {
+      slidesPerView: 3.25,
+        spaceBetween: 15,
+        centeredSlides: true,
+      },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      centeredSlides: false,
+    }
 }
 });
 

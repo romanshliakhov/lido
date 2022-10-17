@@ -133,6 +133,7 @@
     background-color: var(--color-yellow);
 
     @media (min-width: 1024px) {
+      width: 100%;
       grid-column: span 2;
     }
   }
