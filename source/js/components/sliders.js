@@ -21,6 +21,20 @@ let giftsSlider = new Swiper(".gifts__slider", {
   spaceBetween: 12,
   centeredSlides: true,
   loop: true,
+  breakpoints: {
+    // 320: {
+    //   slidesPerView: 1.75,
+    //     spaceBetween: 12,
+    //   },
+    // 576: {
+    //   slidesPerView: 1.5,
+    //   spaceBetween: 15,
+    // },
+    // 768: {
+    //   slidesPerView: 3,
+    //   spaceBetween: 20,
+    // }
+}
 });
 
 

@@ -29,7 +29,7 @@
   color: var(--color-black);
 
   @media (min-width: 768px) {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 22px;
     font-weight: 700;
     color: var(--color-main);
@@ -121,8 +121,7 @@
   text-align: center;
 
   @media (min-width: 576px) {
-    font-size: 50px;
-    line-height: 120%;
+    font-size: 34px;
   }
 }
 
@@ -193,6 +192,10 @@
   font-size: 16px;
   line-height: 120%;
   font-weight: 700;
+
+  @media (min-width: 576px) {
+    font-size: 24px;
+  }
 }
 
 .form__title {
