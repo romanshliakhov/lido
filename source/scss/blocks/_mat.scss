@@ -120,9 +120,6 @@
     grid-gap: 25px 50px;
 
     @media (min-width: 1024px) {
-      // display: grid;
-      grid-template-columns: 1.5fr 2fr;
-      // grid-gap: 0 50px;
       grid-column: span 2;
     }
   }

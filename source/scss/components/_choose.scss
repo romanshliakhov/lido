@@ -8,7 +8,7 @@
   }
 
   &__image {
-    height: 120px;
+    height: clamp(120px, 18.056vw, 260px);
 
     picture,
     img {

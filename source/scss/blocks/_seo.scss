@@ -24,14 +24,28 @@
   &__consultation {
     @media (min-width: 768px) {
       grid-column: span 2;
+      padding: 0 50px;
 
-      .consultation__title {
-        display: none;
-      }
+      // .consultation__box {
+      //   max-width: 940px;
+      //   grid-gap: 30px;
+      //   // justify-content: center;
+      // }
 
-      .consultation__box {
-        // max-width: 995px;
-      }
+      // .consultation__img {
+      //   width: 280px;
+      // }
+
+      // .consultation__image {
+      //   left: 5%;
+      //   width: 280px;
+      //   height: auto;
+      // }
+
+      // .consultation__info {
+      //   max-width: 412px;
+      //   padding: 41px 0;
+      // }
     }
   }
 }
