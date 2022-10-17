@@ -8,8 +8,10 @@
 
   @media (min-width: 768px) {
     padding: 10px 19px;
-    max-width: 430px;
+    max-width: 600px;
     min-height: 147px;
+    margin: 0 auto;
+    grid-column: span 2;
   }
 
   &__box {

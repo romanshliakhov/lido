@@ -11,9 +11,10 @@
     @media (min-width: 1024px) {
       display: grid;
       grid-template-columns: 60% 40%;
+      // grid-template-columns: 2fr 1fr;
       padding: 0 16px;
       align-items: start;
-      grid-gap: 30px 35px;
+      // grid-gap: 30px 35px;
     }
   }
 
@@ -108,7 +109,31 @@
     flex-direction: column;
     align-items: center;
 
-    height: 100%;
-    justify-content: center;
+    // height: 100%;
+    // justify-content: center;
+  }
+
+  &__products {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 25px 50px;
+
+    @media (min-width: 1024px) {
+      // display: grid;
+      grid-template-columns: 1.5fr 2fr;
+      // grid-gap: 0 50px;
+      grid-column: span 2;
+    }
+  }
+
+  &__gifts {
+    width: calc(100% + 32px);
+    padding: 33px 0 26px;
+    background-color: var(--color-yellow);
+
+    @media (min-width: 1024px) {
+      grid-column: span 2;
+    }
   }
 }
