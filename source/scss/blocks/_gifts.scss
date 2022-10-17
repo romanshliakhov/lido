@@ -9,8 +9,20 @@
   grid-gap: 25px;
   background-color: var(--color-yellow);
 
+  &__slider {
+    max-width: 100vw;
+  }
+
   &__title {
     max-width: 260px;
     text-align: center;
+  }
+
+  &__product {
+    picture,
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 }

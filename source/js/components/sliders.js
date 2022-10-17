@@ -14,12 +14,13 @@ for (const container of document.querySelectorAll('.container') ) {
       clickable: true,
     },
   });
-}
+};
 
 let giftsSlider = new Swiper(".gifts__slider", {
-  slidesPerView: 1,
+  slidesPerView: 1.75,
   spaceBetween: 12,
   centeredSlides: true,
+  loop: true,
 });
 
 
