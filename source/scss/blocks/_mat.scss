@@ -10,7 +10,8 @@
 
     @media (min-width: 1024px) {
       display: grid;
-      grid-template-columns: 2fr 1fr;
+      grid-template-columns: 60% 40%;
+      padding: 0 16px;
       align-items: start;
       grid-gap: 30px 35px;
     }
