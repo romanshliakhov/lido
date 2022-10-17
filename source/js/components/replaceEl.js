@@ -9,12 +9,12 @@ let replaceSettings = {
 }
 
 let elementName = {
-  sortingBtn : '.application__product-info',
-  formParentBtn: '.application__product-image',
-  mobileSiblingstBtn: '.application__filling',
+  sortingBtn : '.mat__gift',
+  formParentBtn: '.mat__information',
+  mobileSiblingstBtn: '.mat__consultation',
 }
 
-let items = [...document.querySelectorAll('.applications__list-item')];
+// let items = [...document.querySelectorAll('.mat__wrapp')];
 
 const replaceElements = (elements, elementClass, desktopClass, mobileClass, mobileSetting, desktopSetting, breakpointSetting) => {
   let containerWidth = document.documentElement.clientWidth;
@@ -35,11 +35,11 @@ const replaceElements = (elements, elementClass, desktopClass, mobileClass, mobi
 }
 
 window.addEventListener('resize', () => {
-  replaceElements(items, elementName.sortingBtn, elementName.formParentBtn, elementName.mobileSiblingstBtn, replaceSettings.afterbegin, replaceSettings.afterend, replaceSettings.mobile);
+  replaceElements(items, elementName.sortingBtn, elementName.formParentBtn, elementName.mobileSiblingstBtn, replaceSettings.afterbegin, replaceSettings.afterend, replaceSettings.tablet);
 
 });
 
 window.addEventListener('DOMContentLoaded', () => {
-  replaceElements(items, elementName.sortingBtn, elementName.formParentBtn, elementName.mobileSiblingstBtn, replaceSettings.afterbegin, replaceSettings.afterend, replaceSettings.mobile);
+  replaceElements(items, elementName.sortingBtn, elementName.formParentBtn, elementName.mobileSiblingstBtn, replaceSettings.afterbegin, replaceSettings.afterend, replaceSettings.tablet);
 
 });

@@ -36,6 +36,12 @@
     position: relative;
     padding-left: 45px;
 
+    @media (min-width: 576px) {
+      br {
+        display: none;
+      }
+    }
+
     &::before {
       content: '';
       position: absolute;
