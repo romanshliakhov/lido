@@ -21,6 +21,7 @@ let giftsSlider = new Swiper(".gifts__slider", {
   spaceBetween: 12,
   centeredSlides: true,
   loop: true,
+  observer: true,
   breakpoints: {
     // 320: {
     //   slidesPerView: 1.75,
