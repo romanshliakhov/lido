@@ -9,6 +9,10 @@
   grid-gap: 25px;
   background-color: var(--color-yellow);
 
+  @media (min-width: 1024px) {
+    display: none;
+  }
+
   &__slider {
     max-width: 100%;
   }
