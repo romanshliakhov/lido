@@ -76,19 +76,14 @@
     transition: all 0.4s ease;
     cursor: pointer;
 
-    span {
-      color: #0047FE;
-    }
-
     svg {
-      stroke: #181818;
+      fill:  var(--color-main);
     }
 
     &:hover,
     &:active {
-      background-color: #0047FE;
       svg {
-        stroke: var(--color-white);
+        fill: var(--color-yellow);
       }
     }
   }
