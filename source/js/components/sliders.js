@@ -34,9 +34,12 @@ let giftsSlider = new Swiper(".gifts__slider", {
       centeredSlides: true,
       },
     1024: {
-      slidesPerView: 4,
-      spaceBetween: 20,
+      slidesPerView: 'auto',
+      // slidesPerView: 4,
+      spaceBetween: 15,
+      // adaptiveHeight: true,
       centeredSlides: false,
+      loop: true,
       observer: true,
     }
   }
