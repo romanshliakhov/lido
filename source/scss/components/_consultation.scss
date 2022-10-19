@@ -66,8 +66,7 @@
     align-items: center;
     grid-gap: clamp(6px, 1.042vw, 15px);
 
-    picture,
-    img {
+    svg {
       width: clamp(20px, 2.083vw, 30px);
       height: clamp(20px, 2.083vw, 30px);
     }

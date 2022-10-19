@@ -36,7 +36,7 @@ let giftsSlider = new Swiper(".gifts__slider", {
     1024: {
       slidesPerView: 'auto',
       // slidesPerView: 4,
-      spaceBetween: 15,
+      spaceBetween: 20,
       // adaptiveHeight: true,
       centeredSlides: false,
       loop: true,

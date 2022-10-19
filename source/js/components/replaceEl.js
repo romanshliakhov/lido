@@ -14,7 +14,7 @@ let elementName = {
   mobileSiblingstBtn: '.seo__consultation',
 }
 
-let items = [...document.querySelectorAll('.seo__wrapp')];
+let items = [...document.querySelectorAll('.container')];
 
 const replaceElements = (elements, elementClass, desktopClass, mobileClass, mobileSetting, desktopSetting, breakpointSetting) => {
   let containerWidth = document.documentElement.clientWidth;
@@ -36,10 +36,8 @@ const replaceElements = (elements, elementClass, desktopClass, mobileClass, mobi
 
 window.addEventListener('resize', () => {
   replaceElements(items, elementName.sortingBtn, elementName.formParentBtn, elementName.mobileSiblingstBtn, replaceSettings.beforebegin, replaceSettings.afterbegin, replaceSettings.tablet);
-
 });
 
 window.addEventListener('DOMContentLoaded', () => {
   replaceElements(items, elementName.sortingBtn, elementName.formParentBtn, elementName.mobileSiblingstBtn, replaceSettings.beforebegin, replaceSettings.afterbegin, replaceSettings.tablet);
-
 });

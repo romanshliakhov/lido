@@ -1,48 +1,102 @@
 <header class="header">
-  <div class="container">
-    <div class="header__wrapper">
-      <a class="header__logo" href="#">
-        <picture>
-          <source type='image/webp' srcset='img/logo.webp'>
-          <img width='92' height='40' src='img/logo.png' alt='Lido logo'>
-        </picture>
-      </a>
+  <div class="header__top">
+    <div class="container">
+      <div class="header__wrapper header__wrapper--top">
+        <div class="header__wrapper-block">
+          <div class="header__contact">
+            <svg width='19' height='19'>
+              <use href='img/sprite/sprite.svg#phone'></use>
+            </svg>
+            <a class="header__phone phone" href="tel:380972454556">
+              +38 (097) 245 45 56
+              <span>прийом замовлень</span>
+            </a>
+          </div>
 
-      <div class="header__contact">
-        <a class="header__phone phone" href="tel:380972454556">+38 (097) 245 45 56</a>
-        <span>прийом замовлень</span>
+          <div class="header__adress">
+            <svg width='19' height='19'>
+              <use href='img/sprite/sprite.svg#location'></use>
+            </svg>
+            <span>м.Львів, вул. Вулецька,11</span>
+          </div>
+        </div>
+
+        <div class="header__wrapper-block">
+          <div class="header__worktime">
+            графік роботи <span>9:00 - 18:00</span>
+          </div>
+
+          <div class="lang select">
+            <div class="lang__header select__header">
+              <span class="lang__current select__current">UA</span>
+              <svg class="select__icon" width='9' height='9'>
+                <use href='img/sprite/sprite.svg#agile'></use>
+              </svg>
+            </div>
+
+            <ul class="lang__body select__body">
+              <li class="lang__item select__item" data-choice='choosen'>UA</li>
+              <li class="lang__item select__item"  data-choice='choosen'>RU</li>
+            </ul>
+        </div>
+        </div>
       </div>
+    </div>
+  </div>
+  <div class="header__bot">
+    <div class="container">
+      <div class="header__wrapper">
+        <a class="header__logo" href="#">
+          <picture>
+            <source type='image/webp' srcset='img/logo.webp'>
+            <img width='92' height='40' src='img/logo.png' alt='Lido logo'>
+          </picture>
+        </a>
 
-      <div class="burger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+        <button class="header__consultation button" data-path="consultation">
+          <span>Замовити</span>
+          <picture>
+            <source type='image/webp' srcset='img/phone.webp'>
+            <img width='20' height='17' src='img/phone.png' alt='consultation btn'>
+          </picture>
+        </button>
 
-      <div class="mobile">
-        <ul class="mobile__menu">
-          <li class="mobile__menu-list">
-            <a class="mobile__menu-link" href="#eva">Eva-коврики</a>
-          </li>
-          <li class="mobile__menu-list">
-            <a class="mobile__menu-link" href="#textile">Текстильні коврики</a>
-          </li>
-          <li class="mobile__menu-list">
-            <a class="mobile__menu-link" href="#rubber">Резинові коврики</a>
-          </li>
-          <li class="mobile__menu-list">
-            <a class="mobile__menu-link" href="https://lido.ua/">Магазин автоковриків</a>
-          </li>
-          <li class="mobile__menu-list">
-            <a class="mobile__menu-link" href="https://lido.ua/">Автотовари</a>
-          </li>
-          <li class="mobile__menu-list">
-            <button class="mobile__menu-link">Передзвоніть мені</button>
-          </li>
-          <li class="mobile__menu-list">
-            <a class="mobile__menu-link" href="#contacts">Контакти</a>
-          </li>
-        </ul>
+        <!-- <div class="header__contact">
+          <a class="header__phone phone" href="tel:380972454556">+38 (097) 245 45 56</a>
+          <span>прийом замовлень</span>
+        </div> -->
+
+        <div class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="mobile">
+          <ul class="mobile__menu">
+            <li class="mobile__menu-list">
+              <a class="mobile__menu-link" href="#eva">Eva-коврики</a>
+            </li>
+            <li class="mobile__menu-list">
+              <a class="mobile__menu-link" href="#textile">Текстильні коврики</a>
+            </li>
+            <li class="mobile__menu-list">
+              <a class="mobile__menu-link" href="#rubber">Резинові коврики</a>
+            </li>
+            <li class="mobile__menu-list">
+              <a class="mobile__menu-link" href="https://lido.ua/">Магазин автоковриків</a>
+            </li>
+            <li class="mobile__menu-list">
+              <a class="mobile__menu-link" href="https://lido.ua/">Автотовари</a>
+            </li>
+            <li class="mobile__menu-list">
+              <button class="mobile__menu-link">Передзвоніть мені</button>
+            </li>
+            <li class="mobile__menu-list">
+              <a class="mobile__menu-link" href="#contacts">Контакти</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
