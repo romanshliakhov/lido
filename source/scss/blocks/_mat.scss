@@ -108,9 +108,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    // height: 100%;
-    // justify-content: center;
   }
 
   &__products {
@@ -134,13 +131,34 @@
   }
 
   &__gifts {
+    position: relative;
     width: calc(100% + 32px);
     padding: 33px 0 26px;
     background-color: var(--color-yellow);
+    overflow-x: hidden;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-color: var(--color-yellow);
+    }
+
+    &::before {
+      left: -100%;
+    }
+
+    &::after {
+      right: -100%;
+    }
 
     @media (min-width: 1024px) {
       width: 100%;
       grid-column: span 2;
+      overflow: initial;
     }
   }
 

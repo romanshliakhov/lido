@@ -8,7 +8,14 @@
 
       <main class="main">
         <section class="information">
-          <div class="container">
+            <div class="information__bg">
+              <picture>
+                <source type='image/webp' media='(max-width: 575px)' srcset='img/first-mob.webp'>
+                <source media='(max-width: 575px)' srcset='img/first-mob.png.png'>
+                <source type='image/webp' srcset='img/first-desktop.webp'>
+                <img src='img/first-desktop.png' alt=''>
+              </picture>
+            </div>
             <div class="information__wrapper">
               <div class="information__left">
                 <h1 class="information__title title">Сертифіковані<br> автоковрики <span>ПРЕМІУМ ЯКОСТІ</span></h1>
@@ -31,7 +38,6 @@
                 </div>
               </div>
             </div>
-          </div>
         </section>
 
         <section class="mats">
@@ -280,163 +286,158 @@
                 <div class="materials">
                   <div class="materials__title">Матеріали</div>
 
-                  <div class="materials__lists">
-                    <ul class="materials__list" data-spollers data-one-spoller>
-                      <li class="materials__list-item">
-                        <div class="material">
-                          <div class="material__image">
-                            <picture>
-                              <source type='image/webp' srcset='img/materials/fortuna.webp'>
-                              <img width='62' height='62' src='img/materials/fortuna.png' alt='Fortuna'>
-                            </picture>
-                          </div>
-
-                          <div class="material__info">Fortuna <span class="material__made">Бельгія</span></div>
-
-                          <button class="details" tabindex="-1" type="button" data-spoller>
-                            <svg width='9' height='9'>
-                              <use href='img/sprite/sprite.svg#details'></use>
-                            </svg>
-                          </button>
-
-                          <ul class="details__info">
-                            <li class="details__info-item">
-                              <div class="details__info-title">Латекс</div>
-                              <div class="details__info-counts"><span>3</span> кольори</div>
-                            </li>
-                          </ul>
+                  <ul class="materials__list" data-spollers data-one-spoller>
+                    <li class="materials__list-item">
+                      <div class="material">
+                        <div class="material__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/materials/fortuna.webp'>
+                            <img width='62' height='62' src='img/materials/fortuna.png' alt='Fortuna'>
+                          </picture>
                         </div>
-                      </li>
-                      <li class="materials__list-item">
-                        <div class="material">
-                          <div class="material__image">
-                            <picture>
-                              <source type='image/webp' srcset='img/materials/corona.webp'>
-                              <img width='62' height='62' src='img/materials/corona.png' alt='Corona'>
-                            </picture>
-                          </div>
 
-                          <div class="material__info">Corona <span class="material__made">Іспанія</span></div>
+                        <div class="material__info">Fortuna <span class="material__made">Бельгія</span></div>
 
-                          <button class="details" tabindex="-1" type="button" data-spoller>
-                            <svg width='9' height='9'>
-                              <use href='img/sprite/sprite.svg#details'></use>
-                            </svg>
-                          </button>
+                        <button class="details" tabindex="-1" type="button" data-spoller>
+                          <svg width='9' height='9'>
+                            <use href='img/sprite/sprite.svg#details'></use>
+                          </svg>
+                        </button>
 
-                          <ul class="details__info">
-                            <li class="details__info-item">
-                              <div class="details__info-title">Латекс</div>
-                              <div class="details__info-counts"><span>3</span> кольори</div>
-                            </li>
-                          </ul>
+                        <ul class="details__info">
+                          <li class="details__info-item">
+                            <div class="details__info-title">Латекс</div>
+                            <div class="details__info-counts"><span>3</span> кольори</div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="materials__list-item">
+                      <div class="material">
+                        <div class="material__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/materials/corona.webp'>
+                            <img width='62' height='62' src='img/materials/corona.png' alt='Corona'>
+                          </picture>
                         </div>
-                      </li>
-                      <li class="materials__list-item">
-                        <div class="material">
-                          <div class="material__image">
-                            <picture>
-                              <source type='image/webp' srcset='img/materials/vw.webp'>
-                              <img width='62' height='62' src='img/materials/vw.png' alt='VW'>
-                            </picture>
-                          </div>
 
-                          <div class="material__info">VW<span class="material__made">Німеччина</span></div>
+                        <div class="material__info">Corona <span class="material__made">Іспанія</span></div>
 
-                          <button class="details" tabindex="-1" type="button" data-spoller>
-                            <svg width='9' height='9'>
-                              <use href='img/sprite/sprite.svg#details'></use>
-                            </svg>
-                          </button>
+                        <button class="details" tabindex="-1" type="button" data-spoller>
+                          <svg width='9' height='9'>
+                            <use href='img/sprite/sprite.svg#details'></use>
+                          </svg>
+                        </button>
 
-                          <ul class="details__info">
-                            <li class="details__info-item">
-                              <div class="details__info-title">Латекс</div>
-                              <div class="details__info-counts"><span>3</span> кольори</div>
-                            </li>
-                          </ul>
+                        <ul class="details__info">
+                          <li class="details__info-item">
+                            <div class="details__info-title">Латекс</div>
+                            <div class="details__info-counts"><span>3</span> кольори</div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="materials__list-item">
+                      <div class="material">
+                        <div class="material__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/materials/vw.webp'>
+                            <img width='62' height='62' src='img/materials/vw.png' alt='VW'>
+                          </picture>
                         </div>
-                      </li>
-                    </ul>
 
-                    <ul class="materials__list" data-spollers data-one-spoller>
-                      <li class="materials__list-item">
-                        <div class="material">
-                          <div class="material__image">
-                            <picture>
-                              <source type='image/webp' srcset='img/materials/carrera.webp'>
-                              <img width='62' height='62' src='img/materials/carrera.png' alt='Carrera'>
-                            </picture>
-                          </div>
+                        <div class="material__info">VW<span class="material__made">Німеччина</span></div>
 
-                          <div class="material__info">Carrera <span class="material__made">Бельгія</span></div>
+                        <button class="details" tabindex="-1" type="button" data-spoller>
+                          <svg width='9' height='9'>
+                            <use href='img/sprite/sprite.svg#details'></use>
+                          </svg>
+                        </button>
 
-                          <button class="details" tabindex="-1" type="button" data-spoller>
-                            <svg width='9' height='9'>
-                              <use href='img/sprite/sprite.svg#details'></use>
-                            </svg>
-                          </button>
-
-                          <ul class="details__info">
-                            <li class="details__info-item">
-                              <div class="details__info-title">Латекс</div>
-                              <div class="details__info-counts"><span>3</span> кольори</div>
-                            </li>
-                          </ul>
+                        <ul class="details__info">
+                          <li class="details__info-item">
+                            <div class="details__info-title">Латекс</div>
+                            <div class="details__info-counts"><span>3</span> кольори</div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="materials__list-item">
+                      <div class="material">
+                        <div class="material__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/materials/carrera.webp'>
+                            <img width='62' height='62' src='img/materials/carrera.png' alt='Carrera'>
+                          </picture>
                         </div>
-                      </li>
-                      <li class="materials__list-item">
-                        <div class="material">
-                          <div class="material__image">
-                            <picture>
-                              <source type='image/webp' srcset='img/materials/barrati.webp'>
-                              <img width='62' height='62' src='img/materials/barrati.png' alt='Baratti'>
-                            </picture>
-                          </div>
 
-                          <div class="material__info">Baratti <span class="material__made">Голандія</span></div>
+                        <div class="material__info">Carrera <span class="material__made">Бельгія</span></div>
 
-                          <button class="details" tabindex="-1" type="button" data-spoller>
-                            <svg width='9' height='9'>
-                              <use href='img/sprite/sprite.svg#details'></use>
-                            </svg>
-                          </button>
+                        <button class="details" tabindex="-1" type="button" data-spoller>
+                          <svg width='9' height='9'>
+                            <use href='img/sprite/sprite.svg#details'></use>
+                          </svg>
+                        </button>
 
-                          <ul class="details__info">
-                            <li class="details__info-item">
-                              <div class="details__info-title">Латекс</div>
-                              <div class="details__info-counts"><span>3</span> кольори</div>
-                            </li>
-                          </ul>
+                        <ul class="details__info">
+                          <li class="details__info-item">
+                            <div class="details__info-title">Латекс</div>
+                            <div class="details__info-counts"><span>3</span> кольори</div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="materials__list-item">
+                      <div class="material">
+                        <div class="material__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/materials/barrati.webp'>
+                            <img width='62' height='62' src='img/materials/barrati.png' alt='Baratti'>
+                          </picture>
                         </div>
-                      </li>
-                      <li class="materials__list-item">
-                        <div class="material">
-                          <div class="material__image">
-                            <picture>
-                              <source type='image/webp' srcset='img/materials/ciax.webp'>
-                              <img width='62' height='62' src='img/materials/ciax.png' alt='Ciax'>
-                            </picture>
-                          </div>
 
-                          <div class="material__info">Ciax <span class="material__made">Італія</span></div>
+                        <div class="material__info">Baratti <span class="material__made">Голандія</span></div>
 
-                          <button class="details" tabindex="-1" type="button" data-spoller>
-                            <svg width='9' height='9'>
-                              <use href='img/sprite/sprite.svg#details'></use>
-                            </svg>
-                          </button>
+                        <button class="details" tabindex="-1" type="button" data-spoller>
+                          <svg width='9' height='9'>
+                            <use href='img/sprite/sprite.svg#details'></use>
+                          </svg>
+                        </button>
 
-                          <ul class="details__info">
-                            <li class="details__info-item">
-                              <div class="details__info-title">Латекс</div>
-                              <div class="details__info-counts"><span>3</span> кольори</div>
-                            </li>
-                          </ul>
+                        <ul class="details__info">
+                          <li class="details__info-item">
+                            <div class="details__info-title">Латекс</div>
+                            <div class="details__info-counts"><span>3</span> кольори</div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="materials__list-item">
+                      <div class="material">
+                        <div class="material__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/materials/ciax.webp'>
+                            <img width='62' height='62' src='img/materials/ciax.png' alt='Ciax'>
+                          </picture>
                         </div>
-                      </li>
-                    </ul>
-                  </div>
+
+                        <div class="material__info">Ciax <span class="material__made">Італія</span></div>
+
+                        <button class="details" tabindex="-1" type="button" data-spoller>
+                          <svg width='9' height='9'>
+                            <use href='img/sprite/sprite.svg#details'></use>
+                          </svg>
+                        </button>
+
+                        <ul class="details__info">
+                          <li class="details__info-item">
+                            <div class="details__info-title">Латекс</div>
+                            <div class="details__info-counts"><span>3</span> кольори</div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
 
                 <div class="configuration">
@@ -711,22 +712,27 @@
           </div>
         </section>
 
-        <section class="seo">
+        <section class="seo" id="seo">
           <div class="container">
             <div class="seo__wrapp">
               <h3 class="seo__title h3">Як обрати необхідний коврик?</h3>
 
-              <p class="seo__text">
-                <b>Гумові килимки</b> в салон автомобіля - це, перш за все, практичність, нехай і на шкоду естетиці. <br>
-                Але сенс залишається незмінним: такий килимок не вбирає вологу і не пропускає її далі на ворсову підлогу автомобіля; бруд з нього змивається легко за допомогою напору води; він відмінно захищає від талого снігу.<br>
-                Найчастіше гумові килимки в салон автомобіля мають високі бортики по краях, які захищають від переливання води і бруду на підлогу. На перший погляд, чим вище такі бортики - тим краще.
-              </p>
-
-              <p class="seo__text">
-                <b>Тканинні килимки</b> в салон автомобіля створені для любителів естетики: красивий і приємний матеріал;  широка палітра кольорів (перевага за чорним кольором, але часто зустрічаються бежеві, сірі, різне оздоблення);  декоративні окантовки;   додаткові нашивки. <br>
-                Однак в даному випадку важливо, щоб функціональність не стала жертвою краси. Головною проблемою тканинного килимка (будь-то автомобільні килимки з ковроліну або просто текстильні автомобільні килимки ) є вбирання вологи.<br>
-                Такий килимок з часом може виділяти воду на о     сновне покриття підлоги.
-              </p>
+              <ul class="seo__block-list">
+                <li class="seo__block-item">
+                  <div class="seo__text">
+                    <p><b>Гумові килимки</b> в салон автомобіля - це, перш за все, практичність, нехай і на шкоду естетиці.</p>
+                    <p>Але сенс залишається незмінним: такий килимок не вбирає вологу і не пропускає її далі на ворсову підлогу автомобіля; бруд з нього змивається легко за допомогою напору води; він відмінно захищає від талого снігу.</p>
+                    <p>Найчастіше гумові килимки в салон автомобіля мають високі бортики по краях, які захищають від переливання води і бруду на підлогу. На перший погляд, чим вище такі бортики - тим краще.</p>
+                  </div>
+                </li>
+                <li class="seo__block-item">
+                  <div class="seo__text">
+                    <p><b>Тканинні килимки</b> в салон автомобіля створені для любителів естетики: красивий і приємний матеріал;  широка палітра кольорів (перевага за чорним кольором, але часто зустрічаються бежеві, сірі, різне оздоблення);  декоративні окантовки;   додаткові нашивки.</p>
+                    <p>Однак в даному випадку важливо, щоб функціональність не стала жертвою краси. Головною проблемою тканинного килимка (будь-то автомобільні килимки з ковроліну або просто текстильні автомобільні килимки ) є вбирання вологи.</p>
+                    <p>Такий килимок з часом може виділяти воду на основне покриття підлоги.</p>
+                  </div>
+                </li>
+              </ul>
 
               <div class="seo__consultation consultation">
                 <div class="consultation__title">Вагаєтесь що обрати?</div>
@@ -765,3 +771,5 @@
   </body>
 
 </html>
+
+

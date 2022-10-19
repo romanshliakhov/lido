@@ -2,28 +2,31 @@
   padding: 57px 0;
 
   &__wrapp {
-    @media (min-width: 768px) {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 40px;
-    }
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(25px, 3.906vw, 40px);
   }
 
-  &__title {
-    margin-bottom: 25px;
+  &__block-list {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    grid-gap: 40px;
 
-    @media (min-width: 768px) {
-      grid-column: span 2;
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      justify-content: space-between;
+
+      li {
+        width: 48%;
+      }
     }
-  }
-
-  &__text {
-    margin-bottom: 43px;
   }
 
   &__consultation {
     @media (min-width: 768px) {
-      grid-column: span 2;
       padding: 0 50px;
 
       // .consultation__box {
