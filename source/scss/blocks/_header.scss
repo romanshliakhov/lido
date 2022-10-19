@@ -10,7 +10,12 @@
     padding: 10px 0;
 
     &--top {
-      padding: 15px 0;
+      display: none;
+
+      @media (min-width: 1024px) {
+        display: flex;
+        padding: 15px 0;
+      }
     }
   }
 
@@ -58,6 +63,14 @@
 
       @media (min-width: 1024px) {
         display: none;
+      }
+    }
+
+    svg {
+      display: none;
+
+      @media (min-width: 576px) {
+        display: flex;
       }
     }
   }

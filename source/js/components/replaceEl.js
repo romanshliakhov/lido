@@ -5,16 +5,24 @@ let replaceSettings = {
   afterend: 'afterend', // после самого элемента targetElement
   mobile: 576,
   smallTablet: 768,
-  tablet: 1007
+  tablet: 1024
 }
 
 let elementName = {
-  sortingBtn : '.consultation__title',
-  formParentBtn: '.consultation__info',
+  phone: '.header__contact',
+  phoneParent: '.header__adress',
+  phoneMobile: '.header__logo',
+
+  sortingBtn : '.seo__consultation-title',
+  formParentBtn: '.seo__consultation-info',
   mobileSiblingstBtn: '.seo__consultation',
+
+  lang: '.lang',
+  langParent: '.header__worktime',
+  langMobile: '.mobile__lang',
 }
 
-let items = [...document.querySelectorAll('.container')];
+let items = [...document.querySelectorAll('.wrapper')];
 
 const replaceElements = (elements, elementClass, desktopClass, mobileClass, mobileSetting, desktopSetting, breakpointSetting) => {
   let containerWidth = document.documentElement.clientWidth;
@@ -36,8 +44,14 @@ const replaceElements = (elements, elementClass, desktopClass, mobileClass, mobi
 
 window.addEventListener('resize', () => {
   replaceElements(items, elementName.sortingBtn, elementName.formParentBtn, elementName.mobileSiblingstBtn, replaceSettings.beforebegin, replaceSettings.afterbegin, replaceSettings.tablet);
+  replaceElements(items, elementName.phone, elementName.phoneParent, elementName.phoneMobile, replaceSettings.afterend, replaceSettings.beforebegin, replaceSettings.tablet);
+
+  replaceElements(items, elementName.lang, elementName.langParent, elementName.langMobile, replaceSettings.afterend, replaceSettings.beforebegin, replaceSettings.tablet);
 });
 
 window.addEventListener('DOMContentLoaded', () => {
   replaceElements(items, elementName.sortingBtn, elementName.formParentBtn, elementName.mobileSiblingstBtn, replaceSettings.beforebegin, replaceSettings.afterbegin, replaceSettings.tablet);
+  replaceElements(items, elementName.phone, elementName.phoneParent, elementName.phoneMobile, replaceSettings.afterend, replaceSettings.beforebegin, replaceSettings.tablet);
+
+  replaceElements(items, elementName.lang, elementName.langParent, elementName.langMobile, replaceSettings.afterend, replaceSettings.beforebegin, replaceSettings.tablet);
 });
