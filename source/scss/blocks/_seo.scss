@@ -27,28 +27,34 @@
 
   &__consultation {
     @media (min-width: 768px) {
-      padding: 0 50px;
+      padding: 50px;
 
-      // .consultation__box {
-      //   max-width: 940px;
-      //   grid-gap: 30px;
-      //   // justify-content: center;
-      // }
+      .consultation__box {
+        max-width: 940px;
+        grid-gap: 30px;
+        align-items: initial;
+        padding: 0 60px;
+      }
 
-      // .consultation__img {
-      //   width: 280px;
-      // }
+      .consultation__img {
+        width: clamp(220px, 19.444vw, 280px);
+      }
 
-      // .consultation__image {
-      //   left: 5%;
-      //   width: 280px;
-      //   height: auto;
-      // }
+      .consultation__image {
+        left: 50%;
+        transform: translateX(-50%);
+        width: clamp(220px, 19.444vw, 280px);
+        height: auto;
+      }
 
-      // .consultation__info {
-      //   max-width: 412px;
-      //   padding: 41px 0;
-      // }
+      .consultation__info {
+        max-width: 430px;
+        padding: 60px 0;
+      }
+
+      .consultation__title {
+        text-align: left;
+      }
     }
   }
 }

@@ -35,8 +35,8 @@
   &__logo {
     picture,
     img {
-      width: 122px;
-      height: 53px;
+      width: clamp(122px, 10.833vw, 156px);
+      height: clamp(53px, 4.722vw, 68px);
     }
   }
 
@@ -49,8 +49,7 @@
     border-bottom: 1px solid rgba(49, 49, 51, 0.2);
 
     a {
-      font-size: 20px;
-      line-height: 24px;
+      font-size: clamp(20px, 3.333vw, 48px);
     }
 
     p {
@@ -63,11 +62,6 @@
     @media (min-width: 576px) {
       border-bottom: none;
       order: 1;
-
-      a {
-        font-size: 40px;
-        line-height: 48px;
-      }
 
       p {
         display: none;

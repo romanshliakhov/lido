@@ -28,8 +28,8 @@
   }
 
   &__made-flag {
-    width: 28px;
-    height: 28px;
+    width: clamp(28px, 4.167vw, 60px);
+    height: clamp(28px, 4.167vw, 60px);
 
     picture,
     img {
