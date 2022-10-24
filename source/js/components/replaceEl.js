@@ -45,13 +45,13 @@ const replaceElements = (elements, elementClass, desktopClass, mobileClass, mobi
 window.addEventListener('resize', () => {
   replaceElements(items, elementName.sortingBtn, elementName.formParentBtn, elementName.mobileSiblingstBtn, replaceSettings.beforebegin, replaceSettings.afterbegin, replaceSettings.tablet);
   replaceElements(items, elementName.phone, elementName.phoneParent, elementName.phoneMobile, replaceSettings.afterend, replaceSettings.beforebegin, replaceSettings.tablet);
-
   replaceElements(items, elementName.lang, elementName.langParent, elementName.langMobile, replaceSettings.afterend, replaceSettings.afterend, replaceSettings.tablet);
 });
 
 window.addEventListener('DOMContentLoaded', () => {
   replaceElements(items, elementName.sortingBtn, elementName.formParentBtn, elementName.mobileSiblingstBtn, replaceSettings.beforebegin, replaceSettings.afterbegin, replaceSettings.tablet);
   replaceElements(items, elementName.phone, elementName.phoneParent, elementName.phoneMobile, replaceSettings.afterend, replaceSettings.beforebegin, replaceSettings.tablet);
-
   replaceElements(items, elementName.lang, elementName.langParent, elementName.langMobile, replaceSettings.afterend, replaceSettings.afterend, replaceSettings.tablet);
+
+
 });
