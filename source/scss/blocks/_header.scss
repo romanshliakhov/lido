@@ -86,6 +86,26 @@
       max-width: 170px;
     }
   }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    grid-gap: clamp(15px, 4.167vw, 60px);
+
+    a {
+      font-size: clamp(14px, 1.111vw, 16px);
+      transition: all 0.4s ease;
+      font-weight: 700;
+
+      &:hover {
+        color: var(--color-yellow);
+      }
+    }
+
+    @media (max-width: 1023px) {
+      display: none;
+    }
+  }
 }
 
 

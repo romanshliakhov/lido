@@ -20,38 +20,23 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 110px 0 58px;
+    padding: clamp(75px, 7.639vw, 110px) 0 58px;
     grid-gap: 36px;
     z-index: 1;
-
-    @media (min-width: 1024px) {
-      // flex-direction: row;
-      // align-items: center;
-      // justify-content: space-evenly;
-      // padding: 110px 0;
-    }
   }
 
   &__left {
     display: flex;
     flex-direction: column;
     align-items: center;
-    grid-gap: 26px;
-
-    @media (min-width: 576px) {
-      grid-gap: 64px;
-    }
+    grid-gap: clamp(26px, 4.444vw, 64px);
   }
 
   &__right {
     display: flex;
     flex-direction: column;
     align-items: center;
-    grid-gap: 44px;
-
-    // @media (min-width: 1024px) {
-    //   flex-direction: column-reverse;
-    // }
+    grid-gap: clamp(26px, 3.056vw, 44px);
   }
 
   &__title {

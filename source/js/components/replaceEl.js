@@ -5,7 +5,7 @@ let replaceSettings = {
   afterend: 'afterend', // после самого элемента targetElement
   mobile: 576,
   smallTablet: 768,
-  tablet: 1024
+  tablet: 1006
 }
 
 let elementName = {
